@@ -1,0 +1,14 @@
+body{
+background-image: url('../images/wall.jpg');
+}
+
+.container{
+    background-color: aliceblue;
+    padding: 10%;
+    text-align: center;
+    margin-top: 15%;
+    font-family: 'Gamja Flower', cursive;
+    font-size: 50px;
+    opacity: 0.8;
+    border-radius: 20px;
+}

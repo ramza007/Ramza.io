@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block styles %}
+    {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    
+    {% endblock %}
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+{% block content %}
+
+<body style="font-size: 150%; font-family: 'Courier New', Courier, monospace;">
+
+<!-- huge jumbotron -->
+<div class="containery">
+  <h1 style="font-size: 350%;">
+    About Me
+  </h1>
+</div>
+<!-- end of huge jumbotron -->
+<!--Navbar start-->
+
+  {% include 'navbar.html' %}
+
+<!--End of navbar-->
+<div data-aos="zoom-in">
+  <div class="container" style="padding: 5%;">
+    <h1 style="font-family: 'Monoton', cursive; font-size: 40px;">Welcome To The World Of Ramza</h1>
+    <div data-aos="fade-right">
+    <div class="ramza">
+        <h2 style="font-size: 220%;">About Me</h2>
+        <p>
+          Hello, my name is Ramza Reseni, a full stack developer that is determined and focused on web development.
+          <br>
+          I have several skills which include;
+          <ul>
+              <li>HTML(Hyper Text Markup Language)</li>
+              <li>Bootstrap(The styling language for HTML)</li>
+              <li>Angular (Ecmascript 6)</li>
+              <li>Python (Backend and Front End experienced)</li>
+          </ul>
+         </p>
+    </div>
+    </div>
+
+    <div data-aos="fade-up-right">
+      <div class="skills">
+        <h3 style="text-align: left; padding-bottom: 1%; font-size: 30px;">What I Do</h3>
+
+      <div class="details">
+        <div class="detail-1">
+          <ul style="list-style-type: none; float: left;">
+              <h4 style="font-size: 190%;">Front-end</h4>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>Angular (Ecmascript 6)</li>
+                <li>HTML5</li>
+                <li>Python</li>
+          </ul>
+        </div>
+        <div class="detail-2">
+          <ul style="list-style-type: none; float: right;">
+              <h4 style="font-size: 190%;">Back-end</h4>
+                <li>NodeJS</li>
+                <li>APIs</li>
+                <li>PostgreSQL</li>
+                <li>Django</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div data-aos="fade-left">
+    <div class="life">
+      <h2 style="font-size: 30px; text-align: right; padding-bottom: 1%;">Life In Programming</h2>
+      <p>
+        Programming is a process that leads from an original formulation of a computing problem to executable computer programs.
+        It involves activities such as analysis, developing understanding, generating algorithms, verification of requirements
+        of algorithms including their correctness and resources consumption, and implementation (commonly referred to as coding)
+        of algorithms in a target programming language. Source code is written in one or more programming languages. As referenced from Wikipedia, but to me programming is a whole process that involves observation of a problem, breaking down the problem, and comimg up with a solution as you interact with your computer on a digital level.
+      </p>
+      <p>
+        As a young developer learning and also implementing new ideas practically everday I have grown mentally and improved on previously aquired skills, with resources such as Moringa School, Google and Codecademy to mention a few.
+      </p>
+    </div>
+    <div data-aos="fade-up-right">
+    <div class="hobbies">
+      <h3 style="font-size: 30px; text-align: left; padding-bottom: 1%;">My Life Away From Coding</h3>
+      <p>
+        During my free time when I'm not coding I have activities that I carry out and do to relax, some include;
+          <ul>
+            <li>Swimming</li>
+            <li>Basketball</li>
+            <li>Hiking</li>
+            <li>Bungee Jumping </li>
+          </ul>
+        I'm an all rounder and team player in many outdoor activities, and enjoy team activities that envolve participation and team building.
+      </p>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+{{block.super}} {% endblock %}
+</body>
+{% block scripts %}
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+<script>
+  // Changing the defaults
+    window.sr = ScrollReveal({ reset: true });
+
+    // Customizing a reveal set
+    sr.reveal('.top', { duration: 500 });
+</script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+{% endblock %}
+</html>

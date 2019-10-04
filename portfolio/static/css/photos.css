@@ -1,0 +1,17 @@
+body{
+    /* background-image: url('../images/wall.jpg'); */
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding-bottom: 2%;
+}
+
+.container{
+    padding: 10%;
+    text-align: center;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 20px;
+    margin-top: 6%;
+}

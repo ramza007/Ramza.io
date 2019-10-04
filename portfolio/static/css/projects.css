@@ -1,0 +1,56 @@
+body{
+    background-image: url('../images/wall.jpg');
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Poor Story', cursive;
+    background-attachment: fixed;
+    /* font-size: 22px; */
+    margin-bottom: 2%;
+}
+
+.container{
+    padding: 2%;
+    background-color: black;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    /* text-align: center; */
+    border-radius: 20px;
+    color: white;
+    opacity: 0.9;
+    font-size: 22px;
+
+}
+
+.detail{
+    float: right;
+    /* background-color: darkblue; */
+    margin-right: 10%;
+    margin-top: 2%;
+    padding: 1%;
+    font-size: 200%;
+    font-family: 'Poor Story', cursive;
+    font-size: 140%;
+}
+
+img{
+    width: 50%; 
+    height: 50%;
+    border-radius: 2px;
+}
+
+.containerZ{
+    padding: 20%;
+    background-color: black;
+    margin-top: 6%;
+    margin-bottom: 11%;
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    opacity: 0.9;
+    font-size: 50px;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+h4{
+    font-size: 140%;
+    
+}

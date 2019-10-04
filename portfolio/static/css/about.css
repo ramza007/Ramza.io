@@ -1,0 +1,93 @@
+body{
+    background-image: url('../images/wall.jpg');
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin-bottom: 2%;
+}
+
+.container{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 1%;
+    border-radius: 20px;
+}
+
+.ramza{
+    padding-top: 2%;
+    text-align: left;
+}
+
+.hobbies{
+
+    text-align: left;
+    text-emphasis: bold;
+}
+
+.life{
+    text-align: right;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.skills{
+
+    text-align: left;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+}
+
+h3, h2{
+    text-decoration: underline;
+    
+}
+
+.sparks{
+    padding: 3%;
+    /* padding-bottom: 3%; */
+    background-color: black;
+    opacity: 0.8; 
+    border-radius: 20px;
+}
+
+
+.animated{
+    height: 200px;
+    /* width: 500%; */
+    /* margin-top: 5%; */
+    
+}
+
+.scrollz{
+  /* background-color: black; */
+  text-align: center;
+  padding-top: 25%;
+}
+
+.details{
+  /* background-color: blue; */
+  padding-bottom: 12%;
+  margin-right: 20%;
+  /* margin-left: -10%; */
+}
+
+/* .detail-2{
+  background-color: orange;
+  border-color: black;
+} */
+
+.detail-1{
+  margin-right: -50%;
+}
+
+.containery{
+  padding: 18%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.8; 
+  margin-top: 8%;
+  margin-bottom: 10%;
+  font-family: 'Cabin Sketch', cursive;
+}

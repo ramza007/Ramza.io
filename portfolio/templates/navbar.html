@@ -1,0 +1,57 @@
+{% load bootstrap3 %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+{% endblock %}
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="border-radius: 10px; font-size: 13px;">
+        <!-- Brand -->
+        <a class="navbar-brand" href="/" style="font-size: 22px; padding-top: 0.8%; text-align: left;">Young Developer</a>
+    
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href=" {% url 'projects' %} ">Projects</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Project Categories</a>
+                    <div class="dropdown-menu" style="background-color: gray">
+                        <a class="dropdown-item" href="https://github.com/ramza007?utf8=%E2%9C%93&tab=repositories&q=&type=&language=python"
+                            target="_blank">Python</a>
+                        <a class="dropdown-item" href="https://github.com/ramza007?utf8=%E2%9C%93&tab=repositories&q=&type=&language=typescript"
+                            target="_blank">Angular</a>
+                        <a class="dropdown-item" href="https://github.com/ramza007?utf8=%E2%9C%93&tab=repositories&q=&type=&language=html"
+                            target="_blank">HTML & CSS</a>
+                    </div>
+                </li> -->
+                <!-- <li class="nav-item">
+            <a class="nav-link" href="photography.html">Photography</a>
+          </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href=" {% url 'about' %}">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Contact Me</a>
+                    <div class="dropdown-menu" style="background-color: gray; font-size: 18px;">
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/ramza-reseni/"><i class="fa fa-linkedin"></i>
+                            LinkedIn</a>
+                        <a class="dropdown-item" href="https://github.com/ramza007"><i class="fa fa-github"></i> GitHub</a>
+                        <a class="dropdown-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=ramzalvo007@gmail.com"><i
+                                class="fa fa-envelope"></i> Email</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'photos' %}">Photography</a>
+                </li>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <!--End of navbar-->

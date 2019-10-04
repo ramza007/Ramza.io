@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+    <style>
+        .container {
+            background-color: black;
+            opacity: 0.9;
+            border-radius: 20px;
+            padding: 15%;
+            text-align: center;
+            color: white;
+
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .container {
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    {% include 'navbar.html' %}
+    <a href="/" style="text-decoration: none;">
+        <div class="container" style="font-family: 'Courier New', Courier, monospace;">
+            <h1>
+                Woops!<br>click me and go to go home
+            </h1>
+        </div>
+    </a>
+    {% endblock %}
+</body>

@@ -1,0 +1,126 @@
+body{
+    background-image: url('../images/wall.jpg');
+    /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    padding-bottom: 2%;
+}
+
+.container-fluid{
+    background-color: blue;
+    opacity: 0.6;
+    border-radius: 15px;
+}
+
+.container{
+    background-color: #9ea8b8;
+    margin-top: 6%;
+    padding: 5%;
+    border-radius: 15px;
+    opacity: 0.95;
+}
+
+.card{
+    border-radius: 10px;
+    padding: 3%;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 150%;
+    /* font-family: 'Cabin Sketch', cursive; */
+    margin: 7%;
+}
+
+
+h3, h2{
+    text-align: center;
+}
+
+.image-fixed{
+    border-radius: 20px;
+    /* position: fixed; */
+}
+
+.container1{
+    background-image: url('../images/meee.JPG');
+    padding: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: -12.5%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* .desc{
+    color: blue;
+} */
+
+.skills{
+    text-align: left;
+    margin-bottom: 20%;
+    margin-top: 10%;
+    
+}
+
+.details{
+  /* background-color: blue; */
+  /* padding-bottom: 2%; */
+  margin-right: 20%;
+  /* margin-left: -10%; */
+}
+
+/* .detail-2{
+  background-color: orange;
+  border-color: black;
+} */
+
+.detail-1{
+  margin-right: -50%;
+}
+
+.containerx{
+    /* padding: 2%; */
+    /* background-color: black; */
+    margin-top: 6%;
+    margin-bottom: 2%;
+    /* text-align: center; */
+    border-radius: 20px;
+    color: white;
+    opacity: 0.9;
+    font-size: 22px;
+
+}
+
+img{
+    width: 50%; 
+    height: 50%;
+    border-radius: 2px;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+.detail{
+    float: right;
+    /* background-color: darkblue; */
+    margin-right: 20%;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+.heading{
+    padding: 5%;
+    text-align: center;
+    background-color: black;
+    opacity: 0.87;
+    border-radius: 20px;
+    margin-right: 4%;
+    margin-left: 4%;
+    color: white;
+    margin-top: 2%;
+}

@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'css/projects.css' %}" rel="stylesheet" type="text/css">
+
+</head>
+
+
+<body style="font-family: 'Courier New', Courier, monospace;">
+    <div class="containerZ">
+        <p>Projects</p>
+    </div>
+
+
+    <!--Navbar start-->
+        {% include 'navbar.html' %}
+    <!--End of navbar-->
+
+    <div data-aos="zoom-in">
+        <div class="container">
+            <img src="{% static '/images/projects/instagram.png' %}">
+            <div class="detail">
+                <h1 style="text-align: center; font-size: 150%;">FlipGram</h1>
+                <h4 style="font-size: 80%;"> Project done using django
+                    <br> This is the
+                    <a href="https://flipgram.herokuapp.com/">link</a> to the web app</h4>
+                <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; margin-top: 20%;">This is a
+                    <a href="https://github.com/ramza007/FlipGram"> link</a> to the repository</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div data-aos="zoom-in">
+        <div class="container">
+            <img src="{% static '/images/projects/pig dice.png' %}">
+            <div class="detail">
+                <h1 style="text-align: center; font-size: 150%;"">PigDice</h1>
+                <h4 style="font-size: 80%;"> Project done using HTML
+                    <br> This is the
+                    <a href="https://ramza007.github.io/Pig-Dice/">link</a> to the web app</h4>
+                <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; margin-top: 20%;">This is a
+                    <a href="https://github.com/ramza007/Pig-Dice"> link</a> to the repository</p>
+            </div>
+        </div>
+    </div>
+
+    <div data-aos="zoom-in">
+        <div class="container">
+            <img src="{% static 'images/projects/quotesapp.png' %}">
+            <div class="detail">
+                <h1 style="text-align: center; font-size: 150%;"">Quotes</h1>
+                <h4 style="font-size: 80%;"> Project done using Angular
+                    <br> This is the
+                    <a href="https://ramza007.github.io/Quotes/">link</a> to the web app</h4>
+                <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; margin-top: 20%;">This is a
+                    <a href="https://github.com/ramza007/Quotes"> link</a> to the repository</p>
+            </div>
+        </div>
+    </div>
+    <div data-aos="zoom-in">
+        <div class="container">
+            <img src="{% static '/images/projects/gitsearch.png' %}">
+            <div class="detail">
+                <h1 style="text-align: center; font-size: 150%;"">Git Search</h1>
+                    <h4 style=" font-size: 80%;"> Project done using Angular
+                    <br> This is the
+                    <a href="https://ramza007.github.io/GitHubClone/">link</a> to the web app</h4>
+                    <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; margin-top: 20%;">This is a
+                        <a href="https://github.com/ramza007/GitHubClone"> link</a> to the repository</p>
+            </div>
+        </div>
+    </div>
+    {{block.super}} {% endblock %}
+</body>
+{% block scripts %}
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+    // Changing the defaults
+    window.sr = ScrollReveal({ reset: true });
+    // Customizing a reveal set
+    sr.reveal('.containerZ', { duration: 700 });
+</script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+{% endblock %}
+</html>

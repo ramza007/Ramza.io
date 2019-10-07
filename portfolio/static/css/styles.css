@@ -1,37 +1,43 @@
 body{
-    background-image: url('../images/wall.jpg');
-    /* background-repeat: no-repeat; */
-    background-attachment: fixed;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
     padding-bottom: 2%;
+    background-color: white;
 }
 
-.container-fluid{
-    background-color: blue;
-    opacity: 0.6;
-    border-radius: 15px;
+.container1{
+    background-image: url('../images/version1.JPG');
+    background-size: 100%;
+    /* background-size: contain; */
+    padding: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* margin-top: -12.5%; */
+    text-align: center;
+}
+
+.container1 p {
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bolder;
+    margin-top: 2%;
+    text-align: right;
+    font-size: 110%;
+    opacity: 0.9;
+}
+
+.container1 h1 {
+    opacity: 0.85;
+    text-align: right;
+    font-size: 300%;
+    font-family: 'Notable', sans-serif;
+    /* margin-top: 2%; */
 }
 
 .container{
-    background-color: #9ea8b8;
-    margin-top: 6%;
+    margin-top: 2%;
     padding: 5%;
     border-radius: 15px;
     opacity: 0.95;
-}
-
-.card{
-    border-radius: 10px;
-    padding: 3%;
-
-}
-
-h1{
-    text-align: center;
-    font-size: 150%;
-    /* font-family: 'Cabin Sketch', cursive; */
-    margin: 7%;
 }
 
 
@@ -44,29 +50,36 @@ h3, h2{
     /* position: fixed; */
 }
 
-.container1{
-    background-image: url('../images/meee.JPG');
-    padding: 30%;
-    padding-left: 5%;
-    padding-right: 5%;
-    background-attachment: fixed;
-    background-size: cover;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: -12.5%;
-    text-align: center;
-    border-radius: 10px;
-}
 
-/* .desc{
-    color: blue;
-} */
 
 .skills{
     text-align: left;
     margin-bottom: 20%;
     margin-top: 10%;
     
+}
+
+.hobbies{
+    text-align: left;
+    text-emphasis: bold;
+}
+
+.hobbies h3{
+    font-size: 30px;
+    text-align: left;
+    padding-bottom: 1%;
+}
+
+.life{
+    text-align: right;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+.life h2{
+    font-size: 30px;
+    text-align: right;
+    padding-bottom: 1%;
 }
 
 .details{
@@ -123,4 +136,52 @@ img{
     margin-left: 4%;
     color: white;
     margin-top: 2%;
+}
+
+
+#con1 {
+    /* text-align: center; */
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+}
+
+#TIR {
+    animation: fadein 4s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

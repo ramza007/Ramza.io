@@ -1,9 +1,21 @@
 body{
-    background-image: url('../images/wall.jpg');
     background-attachment: fixed;
     font-family: 'Courier New', Courier, monospace;
     font-size: 12px;
     margin-bottom: 2%;
+}
+
+.containery{
+  padding: 18%;
+  /* background-color: black;
+  color: white; */
+  color: black;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.8; 
+  margin-top: 8%;
+  margin-bottom: 10%;
+  font-family: 'Cabin Sketch', cursive;
 }
 
 .container{
@@ -42,15 +54,6 @@ h3, h2{
     
 }
 
-.sparks{
-    padding: 3%;
-    /* padding-bottom: 3%; */
-    background-color: black;
-    opacity: 0.8; 
-    border-radius: 20px;
-}
-
-
 .animated{
     height: 200px;
     /* width: 500%; */
@@ -80,14 +83,44 @@ h3, h2{
   margin-right: -50%;
 }
 
-.containery{
-  padding: 18%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  border-radius: 20px;
-  opacity: 0.8; 
-  margin-top: 8%;
-  margin-bottom: 10%;
-  font-family: 'Cabin Sketch', cursive;
+#test {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }

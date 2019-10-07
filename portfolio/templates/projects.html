@@ -16,7 +16,7 @@
 
 <body style="font-family: 'Courier New', Courier, monospace;">
     <div class="containerZ">
-        <p>Projects</p>
+        <h1>Projects</h1>
     </div>
 
 
@@ -25,21 +25,20 @@
     <!--End of navbar-->
 
     <div data-aos="zoom-in">
-        <div class="container">
+        <div class="container-fluid">
             <img src="{% static '/images/projects/instagram.png' %}">
             <div class="detail">
-                <h1 style="text-align: center; font-size: 150%;">FlipGram</h1>
-                <h4 style="font-size: 80%;"> Project done using django
+                <h1>FlipGram</h1>
+                <h4> Project developed using Django
                     <br> This is the
                     <a href="https://flipgram.herokuapp.com/">link</a> to the web app</h4>
-                <p style="font-family: 'Courier New', Courier, monospace; font-size: 12px; margin-top: 20%;">This is a
-                    <a href="https://github.com/ramza007/FlipGram"> link</a> to the repository</p>
+                <p>This is a <a href="https://github.com/ramza007/FlipGram"> link</a> to the repository</p>
             </div>
         </div>
     </div>
 
 
-    <div data-aos="zoom-in">
+    <!-- <div data-aos="zoom-in">
         <div class="container">
             <img src="{% static '/images/projects/pig dice.png' %}">
             <div class="detail">
@@ -78,7 +77,7 @@
                         <a href="https://github.com/ramza007/GitHubClone"> link</a> to the repository</p>
             </div>
         </div>
-    </div>
+    </div> -->
     {{block.super}} {% endblock %}
 </body>
 {% block scripts %}

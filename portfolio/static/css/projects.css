@@ -1,56 +1,71 @@
 body{
-    background-image: url('../images/wall.jpg');
-    /* font-family: 'Courier New', Courier, monospace; */
     font-family: 'Poor Story', cursive;
     background-attachment: fixed;
-    /* font-size: 22px; */
     margin-bottom: 2%;
 }
 
-.container{
-    padding: 2%;
-    background-color: black;
-    margin-top: 6%;
+.container-fluid{
+    /* background-color: aqua; */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 8vw;
+    /* margin-top: 6%; */
     margin-bottom: 2%;
-    /* text-align: center; */
-    border-radius: 20px;
-    color: white;
-    opacity: 0.9;
-    font-size: 22px;
 
+}
+
+.container-fluid h1{
+    text-align: center;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+.container-fluid p{
+    font-size: 60%;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.container-fluid img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+.container-fluid h4{
+    font-size: 70%;
+}
+
+#text-container{
+    color: white;
+    background-color: aqua;
+    text-align: right;
 }
 
 .detail{
     float: right;
     /* background-color: darkblue; */
-    margin-right: 10%;
-    margin-top: 2%;
-    padding: 1%;
-    font-size: 200%;
-    font-family: 'Poor Story', cursive;
-    font-size: 140%;
-}
-
-img{
-    width: 50%; 
-    height: 50%;
-    border-radius: 2px;
-}
-
-.containerZ{
-    padding: 20%;
-    background-color: black;
-    margin-top: 6%;
-    margin-bottom: 11%;
-    text-align: center;
-    border-radius: 20px;
-    color: white;
-    opacity: 0.9;
-    font-size: 50px;
+    padding: 5% 8% 5% 8%;
+    font-size: 280%;
     font-family: 'Cabin Sketch', cursive;
 }
 
-h4{
-    font-size: 140%;
-    
+/* img{
+    width: 50%; 
+    height: 50%;
+    border-radius: 2px;
+} */
+
+.containerZ{
+    background-image: url(../images/stars.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 25%;
+    padding-bottom: 28%;
+}
+.containerZ h1{
+    font-family: 'Cabin Sketch', cursive;
+    font-size-adjust: inherit;
+    font-size: 550%;
 }

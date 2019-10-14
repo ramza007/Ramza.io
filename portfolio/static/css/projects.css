@@ -5,14 +5,13 @@ body{
 }
 
 .container-fluid{
-    /* background-color: aqua; */
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 8vw;
-    /* margin-top: 6%; */
     margin-bottom: 2%;
-
+    /* margin-top: 6%; */
+    /* background-color: aqua; */
 }
 
 .container-fluid h1{
@@ -29,6 +28,7 @@ body{
 
 .container-fluid img{
     width: 60%;
+    padding-left: 4vw;
     border-radius: 10px;
 }
 
@@ -44,17 +44,11 @@ body{
 
 .detail{
     float: right;
-    /* background-color: darkblue; */
     padding: 5% 8% 5% 8%;
     font-size: 280%;
     font-family: 'Cabin Sketch', cursive;
+    /* background-color: darkblue; */
 }
-
-/* img{
-    width: 50%; 
-    height: 50%;
-    border-radius: 2px;
-} */
 
 .containerZ{
     background-image: url(../images/stars.png);

@@ -4,6 +4,22 @@ body{
     margin-bottom: 2%;
 }
 
+.containerZ{
+    background-image: url(../images/stars.png);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 25%;
+    padding-bottom: 28%;
+}
+
+.containerZ h1{
+    font-family: 'Cabin Sketch', cursive;
+    font-size-adjust: inherit;
+    font-size: 550%;
+}
+
+
 .container-fluid{
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -50,16 +66,3 @@ body{
     /* background-color: darkblue; */
 }
 
-.containerZ{
-    background-image: url(../images/stars.png);
-    background-size: cover;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 25%;
-    padding-bottom: 28%;
-}
-.containerZ h1{
-    font-family: 'Cabin Sketch', cursive;
-    font-size-adjust: inherit;
-    font-size: 550%;
-}

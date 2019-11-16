@@ -1,13 +1,13 @@
 # Portfolio2
 
 ### By **Ramza Reseni**, 
-#### Published date **06/01/19**
+#### Published date **11/15/19**
 
 
 ## Description
 
-My Personal Portfolio that shows my projects and interests.
-Started and completed in Python
+Personal Portfolio showcasing my development skills.
+Started and completed in Python.
 
 
 ## Technologies Used
@@ -16,7 +16,7 @@ Started and completed in Python
 - Bootstrap
 - JavaScript
 - Python(**ver 3.7**)
-- Django (**ver 2.0**) framework
+- Django framework(**ver 2.0**) 
 
 
 ### Acknowledgements

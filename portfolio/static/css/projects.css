@@ -1,21 +1,19 @@
 body{
     font-family: 'Poor Story', cursive;
     background-attachment: fixed;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
 }
 
-.containerZ{
+.container-1{
     background-image: url(../images/stars.png);
-    background-size: cover;
+    /* background-size: cover; */
     background-attachment: fixed;
-    text-align: center;
-    padding: 25%;
-    padding-bottom: 28%;
+    padding: 30%;
 }
 
-.containerZ h1{
+.container-1 h1{
+    text-align: center;
     font-family: 'Cabin Sketch', cursive;
-    font-size-adjust: inherit;
     font-size: 550%;
 }
 

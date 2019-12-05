@@ -24,9 +24,6 @@ Started and completed in Python.
 - [Edwin Walela](https://github.com/EdwinWalela)
 - David Theuri (Images)
 - Moringa School
-- Stack Overflow
-- Google
-
 
 
 #### License under [***Apache***](https://github.com/ramza007/Portfolio2/blob/master/LICENSE)

@@ -63,8 +63,6 @@ h3, h2{
     
 }
 
-
-
 .details{
   /* background-color: blue; */
   /* padding-bottom: 2%; */
@@ -79,6 +77,24 @@ h3, h2{
 
 .detail-1{
   margin-right: -50%;
+}
+
+.detail-1 ul{
+    list-style-type: none; 
+    float: left;
+}
+
+.detail-1 h4{
+    font-size: 190%
+}
+
+.detail-2 ul{
+    list-style-type: none;
+    float: right;
+}
+
+.detail-2 h4{
+    font-size: 190%
 }
 
 .detail{
@@ -135,4 +151,41 @@ h3, h2{
     to {
         opacity: 1;
     }
+}
+
+@media (max-width: 480px) {
+    body{
+        font-size: 4vw;
+        overflow-x: hidden;
+    }
+    .container1{
+        background-size: 100vh;
+        padding-bottom: 30vh;
+        font-size: 3vw;
+        opacity: 1;
+    }
+
+    .container1 h1, p{
+        opacity: 1;
+    }
+
+    .details{
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+
+    .detail-1 ul{
+        list-style-type: none;
+        float: none;
+        padding-bottom: 2vh;
+    }
+
+
+    .detail-2 ul{
+        list-style-type: none;
+        float: none;
+    }
+
 }

@@ -1,13 +1,15 @@
-{% load bootstrap3 %}
+{% load bootstrap4 %}
 {% load static %}
 {% block styles %}
-    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
 {% endblock %}
     <!--Navbar start-->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="font-size: 15px;">
+    <nav class="navbar navbar-expand-md bg-light navbar-light sticky-top" id="Nav1" style="font-size: 15px;">
         <!-- Brand -->
-        <a class="navbar-brand" href="/">RAMZA RESENI</a>
+        <a class="navbar-brand" href="/">RAMZA OMBATI</a>
     
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -32,7 +34,7 @@
                         <a class="dropdown-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=ramzalvo007@gmail.com"><i
                                 class="fa fa-envelope"></i> Email</a>
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'photos' %}">Photography</a>
+                    <a class="nav-link" href="https://photography-io.herokuapp.com/">Photography</a>
                 </li>
                     </div>
                 </li>

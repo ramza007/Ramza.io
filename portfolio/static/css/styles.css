@@ -1,6 +1,10 @@
 body{
     padding-bottom: 2%;
+    overflow-x: hidden;
     background-color: white;
+    font-size: 160%;
+    font-family: 'Courier New', Courier, monospace; 
+    /* font-weight: 510; */
 }
 
 .container1{
@@ -59,28 +63,7 @@ h3, h2{
     
 }
 
-.hobbies{
-    text-align: left;
-    text-emphasis: bold;
-}
 
-.hobbies h3{
-    font-size: 30px;
-    text-align: left;
-    padding-bottom: 1%;
-}
-
-.life{
-    text-align: right;
-    margin-bottom: 10%;
-    margin-top: 10%;
-}
-
-.life h2{
-    font-size: 30px;
-    text-align: right;
-    padding-bottom: 1%;
-}
 
 .details{
   /* background-color: blue; */
@@ -98,44 +81,12 @@ h3, h2{
   margin-right: -50%;
 }
 
-.containerx{
-    /* padding: 2%; */
-    /* background-color: black; */
-    margin-top: 6%;
-    margin-bottom: 2%;
-    /* text-align: center; */
-    border-radius: 20px;
-    color: white;
-    opacity: 0.9;
-    font-size: 22px;
-
-}
-
-img{
-    width: 50%; 
-    height: 50%;
-    border-radius: 2px;
-    margin-bottom: 2%;
-    padding: 1%;
-}
 .detail{
     float: right;
     /* background-color: darkblue; */
     margin-right: 20%;
     margin-top: 2%;
     padding: 1%;
-}
-
-.heading{
-    padding: 5%;
-    text-align: center;
-    background-color: black;
-    opacity: 0.87;
-    border-radius: 20px;
-    margin-right: 4%;
-    margin-left: 4%;
-    color: white;
-    margin-top: 2%;
 }
 
 

@@ -1,23 +1,15 @@
-.navbar-brand{
-    font-size: 150%;
-    padding: 0.8%;
-    text-align: center;
-    background-color: orange;
-    color: orange;
+.navbar-light{
+    font-weight: 300;
+    font-size: 110%;
 }
 
-.navbar-ligh{
-    font-weight: 510;
-    opacity: 0.96;
-    background-color: black;
+.navbar-brand{
+    font-size: 120%;
+    padding-right: 0;
 }
 
 
 .navbar-nav{
-    background-color: orange;
+    /* background-color: orange; */
     color: black;
-}
-
-.navbar-nav nav-item{
-    color: orange;
 }

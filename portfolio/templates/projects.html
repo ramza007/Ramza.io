@@ -19,9 +19,10 @@
     <!-- start of body -->
     
 
-{% block content %}
+    
+    <body>
+    {% block content %} {{block.super}}
 
-<body style="font-family: 'Courier New', Courier, monospace;">
     <div class="container-1">
         <h1>Projects</h1>
     </div>
@@ -84,7 +85,9 @@
             </div>
         </div>
     </div>
-    {{block.super}} {% endblock %}
+
+    
+  {% endblock %}
 </body>
 {% block scripts %}
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>

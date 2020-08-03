@@ -1,5 +1,6 @@
 body{
-    font-family: 'Poor Story', cursive;
+    /* font-family: 'Poor Story', cursive; */
+    font-family: 'Courier New', Courier, monospace;
     background-attachment: fixed;
     /* margin-bottom: 2%; */
 }
@@ -7,12 +8,12 @@ body{
 .container-1{
     background-image: url(../images/stars.png);
     background-attachment: fixed;
-    padding: 25% 25% 30% 25%;
+    padding: 20vw;
 }
 
 .container-1 h1{
     font-family: 'Cabin Sketch', cursive;
-    font-size: 600%;
+    font-size: 7vw;
     text-align: center;
 }
 
@@ -21,9 +22,18 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 8vw;
-    margin-bottom: 2%;
+    padding: 5vw 5vw 30vh 5vw;
+    /* margin-bottom: 2%; */
+    /* background-color: orange; */
 }
+
+.detail{
+    float: right;
+    padding: 3vw;
+    font-size: 2.5vw;
+    font-family: 'Cabin Sketch', cursive;
+}
+
 
 .container-fluid h1{
     text-align: center;
@@ -48,10 +58,28 @@ body{
 }
 
 
-.detail{
-    float: right;
-    padding: 5% 8% 5% 8%;
-    font-size: 280%;
-    font-family: 'Cabin Sketch', cursive;
-}
 
+@media (max-width: 480px) {
+    .container-1{
+        padding: 42vh 20vw 42vh 20vw;
+    }
+    
+    .container-1 h1{
+        font-size: 15vw;
+    }
+
+    .container-fluid{
+        font-size: 3vw;
+        padding: 5vw 5vw 20vh 5vw;
+    }
+
+    .container-fluid img{
+        width: 100%;
+        padding: 0;
+        border-radius: 5px;
+    }
+
+    .detail{
+        font-size: 8vw;
+    }
+}

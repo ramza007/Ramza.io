@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.template import RequestContext
 from django.shortcuts import render
-
+from .models import Project
 
 # Create your views here.
 def index(request):
@@ -14,7 +14,8 @@ def about(request):
 
 def projects(request):
     title = 'Ramza | Projects'
-    return render(request, 'projects.html', {"title": title})
+    show_case = Project.objects.all()
+    return render(request, 'projects.html', {"title": title, "show_case": show_case})
 
 
 # HTTP Error 400

@@ -17,9 +17,6 @@
     
     
     <!-- start of body -->
-    
-
-    
     <body>
     {% block content %} {{block.super}}
 
@@ -31,64 +28,24 @@
         {% include 'navbar.html' %}
     <!--End of navbar-->
 
+    {% for x in show_case %}
     <div data-aos="zoom-in">
         <div class="container-fluid">
-            <img src="{% static '/images/projects/instagram.png' %}">
+            <img src="{{ x.image.url }}">
             <div class="detail">
-                <h1>FlipGram</h1>
-                <h4> Project developed using Django
-                    <br> This is the
-                    <a href="https://flipgram.herokuapp.com/">link</a> to the web app</h4>
-                <p>This is a <a href="https://github.com/ramza007/FlipGram"> link</a> to the repository</p>
+                <h1>{{ x.name }}</h1>
+                <h4> Project developed using Django <br> 
+                This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
+                <p>This <a href="{{ x.repoLink }}"> link</a> to the site's repository</p>
             </div>
         </div>
     </div>
+    {% endfor %}
 
-
-    <div data-aos="zoom-in">
-        <div class="container-fluid">
-            <img src="{% static '/images/projects/pig dice.png' %}">
-            <div class="detail">
-                <h1>PigDice</h1>
-                <h4 style="font-size: 80%;"> Project done using HTML
-                    <br> This is the
-                    <a href="https://ramza007.github.io/Pig-Dice/">link</a> to the web app</h4>
-                <p>This is a
-                    <a href="https://github.com/ramza007/Pig-Dice"> link</a> to the repository</p>
-            </div>
-        </div>
-    </div>
-
-    <div data-aos="zoom-in">
-        <div class="container-fluid">
-            <img src="{% static 'images/projects/quotesapp.png' %}">
-            <div class="detail">
-                <h1>Quotes</h1>
-                <h4 style="font-size: 80%;"> Project done using Angular
-                    <br> This is the
-                    <a href="https://ramza007.github.io/Quotes/">link</a> to the web app</h4>
-                <p>This is a
-                    <a href="https://github.com/ramza007/Quotes"> link</a> to the repository</p>
-            </div>
-        </div>
-    </div>
-    <div data-aos="zoom-in">
-        <div class="container-fluid">
-            <img src="{% static '/images/projects/gitsearch.png' %}">
-            <div class="detail">
-                <h1>Git Search</h1>
-                    <h4 style=" font-size: 80%;"> Project done using Angular
-                    <br> This is the
-                    <a href="https://ramza007.github.io/GitHubClone/">link</a> to the web app</h4>
-                    <p>This is a
-                        <a href="https://github.com/ramza007/GitHubClone"> link</a> to the repository</p>
-            </div>
-        </div>
-    </div>
+  {% endblock %}
+    </body>
 
     
-  {% endblock %}
-</body>
 {% block scripts %}
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <!-- <script>

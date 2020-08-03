@@ -1,7 +1,8 @@
 # Portfolio2
 
-### By **Ramza Reseni**, 
+### By **Ramza Ombati**
 #### Published date **11/15/19**
+#### Last Publish Modification **11/15/19** 
 
 
 ## Description
@@ -11,21 +12,30 @@ Started and completed in Python.
 
 
 ## Technologies Used
-- HTML ( **ver 4** )
-- CSS (**ver 3**)
+- HTML ( **ver 5** )
+- CSS (**ver 4**)
 - Bootstrap
 - JavaScript
-- Python(**ver 3.7**)
-- Django framework(**ver 2.0**) 
+- Python(**ver 3.6.9**)
+- Django framework(**ver 3.0.8**) 
 
+## Pip Packages
+- Django
+- Django Bootstrap 3
+- Django Heroku
+- Gunicorn
+- Pillow
+- Psycopg2 Binary
+- Python Decouple
+- Whitenoise
 
 ### Acknowledgements
 
 - [Edwin Walela](https://github.com/EdwinWalela)
-- David Theuri (Images)
 - Moringa School
+- Stack Overflow
 
 
-#### License under [***Apache***](https://github.com/ramza007/Portfolio2/blob/master/LICENSE)
+#### Licensed under [***Apache***](https://github.com/ramza007/Portfolio2/blob/master/LICENSE)
 
-Copyright (C) 2019 ~ Reseni
+Copyright (C) 2020 ~ Ombati

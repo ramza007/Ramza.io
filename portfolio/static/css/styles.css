@@ -126,14 +126,20 @@ body{
     }
     
     .container1{
-        background-size: 100vh;
-        padding: 40vh 0 20vh 0;
+        background-size: 90vh;
+        background-image: url('../images/version2.JPG');
+        padding: 50vh 0 40vh 0;
         font-size: 3vw;
         opacity: 1;
         color: whitesmoke;
     }
 
-    .container1 h1, p{
+    .container1 h1{
+        opacity: 1;
+        padding-top: 25vh;
+    }
+
+    .container1 p{
         opacity: 1;
     }
 

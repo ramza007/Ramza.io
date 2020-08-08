@@ -9,7 +9,7 @@ body{
 .container1{
     background-image: url('../images/version1.JPG');
     background-size: 100%;
-    padding: 30% 10% 20% 30%;
+    padding: 30% 10% 30% 30%;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
@@ -32,7 +32,7 @@ body{
 
 .container{
     margin-top: 2%;
-    padding: 5%;
+    padding: 10vh 2vw 6vh 2vw;
     opacity: 0.95;
 }
 
@@ -137,15 +137,14 @@ body{
         opacity: 1;
     }
 
-    .details{
-        padding: 0;
-        margin: 0;
-        text-align: left;
+    .container{
+        padding: 5%;
     }
 
     .skills{
         padding: 0;
     }
+
     .detail-1 ul{
         list-style-type: none;
         float: none;

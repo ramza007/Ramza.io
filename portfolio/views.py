@@ -3,6 +3,12 @@ from django.template import RequestContext
 from django.shortcuts import render
 from .models import Project
 
+# API Imports
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .models import ProjectAPI
+from .serializer import ProjectAPISerializer
+
 # Create your views here.
 def index(request):
     title = "Ramza | Full Stack Dev. "
@@ -33,3 +39,12 @@ def projects(request):
 def photos(request):
     title = 'Photos | Ramza'
     return render(request, 'photos2.html', {"title": title})
+
+
+# API VIEWS
+class ProjectList(APIView):
+    def get (self, request, format=None):
+        all_projects = ProjectAPI.objects.all()
+        serializers = ProjectAPISerializer(all_projects, many=True)
+
+        return Response(serializers.data)

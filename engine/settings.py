@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'portfolio.apps.PortfolioConfig',
     'bootstrap3',
     'bootstrap4',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

@@ -1,11 +1,12 @@
-{% load bootstrap3 %}
 {% load static %}
+{% load bootstrap3 %}
 
 <!DOCTYPE html>
 <html lang="en" >
     <head>
         <meta charset="UTF-8">
-
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
         
         {% block styles %}
         {% bootstrap_css %}
@@ -15,14 +16,14 @@
 </head>
 <body>
 
-    <button class="button" id="myButton">OPEN</button>
-
+<a href="#" class="button">Recommend</a>
 <!-- partial -->
 
 
 </body>
 {% block scripts %}
   <!-- <script src='https://wzrd.in/standalone/charming@latest'></script> -->
-  <script  src="{% static 'js/button1.js' %}"></script>
+    <script  src="{% static 'js/button1.js' %}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js'></script>
 {% endblock %}
 </html>

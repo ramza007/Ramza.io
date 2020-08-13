@@ -6,13 +6,12 @@ body{
 }
 
 .container-1{
-    background-image: url(../images/stars.png);
     background-attachment: fixed;
     padding: 20vw;
 }
 
 .container-1 h1{
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Rowdies', cursive;
     font-size: 7vw;
     text-align: center;
 }
@@ -31,7 +30,8 @@ body{
     float: right;
     padding: 3vw;
     font-size: 2.5vw;
-    font-family: 'Cabin Sketch', cursive;
+    /* font-family: 'Cabin Sketch', cursive; */
+    font-family: 'Abel', sans-serif;
 }
 
 

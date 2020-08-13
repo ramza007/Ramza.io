@@ -9,8 +9,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         {% block styles %}
         {% bootstrap_css %}
         <link href="{% static 'css/projects.css' %}" rel="stylesheet" type="text/css">
@@ -31,11 +29,11 @@
     <!--End of navbar-->
 
     {% for x in show_case %}
-    <div data-aos="zoom-in">
+    <div data-aos="zoom-out">
         <div class="container-fluid">
             <img src="{{ x.image.url }}">
             <div class="detail">
-                <h1>{{ x.name }}</h1>
+                <h1>{{ x.name }} {% include 'button.html' %}</h1>
                 <h4> Project developed using Django <br> 
                 This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
                 <p>This <a href="{{ x.repoLink }}"> link</a> to the site's repository</p>
@@ -43,7 +41,7 @@
         </div>
     </div>
     {% endfor %}
-
+    
   {% endblock %}
     </body>
 

@@ -1,0 +1,28 @@
+{% load bootstrap3 %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+
+        
+        {% block styles %}
+        {% bootstrap_css %}
+        <link rel="stylesheet" href="{% static 'css/button1.css' %}">
+        {% endblock %}
+
+</head>
+<body>
+
+    <button class="button" id="myButton">OPEN</button>
+
+<!-- partial -->
+
+
+</body>
+{% block scripts %}
+  <!-- <script src='https://wzrd.in/standalone/charming@latest'></script> -->
+  <script  src="{% static 'js/button1.js' %}"></script>
+{% endblock %}
+</html>

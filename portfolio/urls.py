@@ -1,6 +1,7 @@
 from django.conf.urls import url
 from django.urls import path, include,re_path
 from . import views
+from rest_framework.authtoken.views import obtain_auth_token
 
 
 
@@ -10,4 +11,5 @@ urlpatterns = [
     path('projects', views.projects, name='projects'),
     path('photos', views.photos, name='photos'),
     re_path(r'^api/projects/$', views.ProjectList.as_view()),
+    re_path(r'^api-token-auth/', obtain_auth_token),
 ]

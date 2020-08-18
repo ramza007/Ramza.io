@@ -12,4 +12,5 @@ urlpatterns = [
     path('photos', views.photos, name='photos'),
     re_path(r'^api/projects/$', views.ProjectList.as_view()),
     re_path(r'^api-token-auth/', obtain_auth_token),
+    re_path(r'api/project/project-id/(?P<pk>[0-9]+)/$', views.ProjectDescription.as_view()),
 ]

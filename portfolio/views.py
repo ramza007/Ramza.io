@@ -58,4 +58,41 @@ class ProjectList(APIView):
         return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
 
     permission_classes= (IsAdminOrReadOnly,)
+
+
+# Getting a single Item
     
+class ProjectDescription(APIView):
+    permission_classes = (IsAdminOrReadOnly,)
+    def get_proj(self, pk):
+        try:
+            return ProjectAPI.objects.get(pk=pk)
+        except ProjectAPI.DoesNotExist:
+            return HTTP404
+    
+    def get(self, request, pk, format=None):
+        proj = self.get_proj(pk)
+        serializers = ProjectAPISerializer(proj)
+
+        return Response(serializers.data)
+
+# Updating an item
+
+    def put(self, request, pk, format=None):
+        proj = self.get_proj(pk)
+        serializers = ProjectAPISerializer(proj, request.data)
+
+        if serializers.is_valid():
+            serializers.save()
+            return Response(serializers.data)
+        else:
+            return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+
+# Deleting an item
+
+    def delete(self, request, pk, format=None):
+        proj = self.get_proj(pk)
+        proj.delete()
+
+        return Response(status=status.HTTP_204_NO_CONTENT)
+

@@ -8,7 +8,7 @@ body{
 
 .container-1{
     background-attachment: fixed;
-    padding: 20vw;
+    padding: 40vh;
 }
 
 .container-1 h1{
@@ -34,10 +34,6 @@ body{
     font-size: 2.5vw;
     /* font-family: 'Cabin Sketch', cursive; */
     font-family: 'Abel', sans-serif;
-}
-
-.detail h1{
-    /* display:inline-block; */
 }
 
 

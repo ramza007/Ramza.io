@@ -59,6 +59,34 @@ body{
     font-size: 70%;
 }
 
+/* All the snapping stuff */
+.scroll-container {
+    /* width: 90vw; */
+    height: 90vh;
+    /* max-height: 30rem; */
+    margin: 3rem auto;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    /* background-color: blue; */
+}
+
+section {
+    height: 100%;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+/* Other styles */
+section {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: darkorchid; */
+    text-align: center;
+}
+
 
 
 @media (max-width: 480px) {

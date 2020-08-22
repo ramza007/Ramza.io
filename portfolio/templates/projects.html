@@ -30,19 +30,21 @@
         {% include 'navbar.html' %}
     <!--End of navbar-->
 
-    {% for x in show_case %}
-    <div data-aos="zoom-out">
+    <main class="scroll-container">
+        {% for x in show_case %}
+        <section>
         <div class="container-fluid">
             <img src="{{ x.image.url }}">
             <div class="detail">
                 <h1>{{ x.name }} </h1>
-                <h4> Project developed using Django <br> 
-                This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
+                <h4> Project developed using Django <br>
+                    This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
                 <p>This <a href="{{ x.repoLink }}"> link</a> to the site's repository</p>
             </div>
         </div>
-    </div>
-    {% endfor %}
+        </section>
+        {% endfor %}
+    </main>
     
   {% endblock %}
     </body>

@@ -30,10 +30,10 @@ body{
 
 .detail{
     float: right;
-    padding: 4vw 6vw 4vw 6vw;
+    padding: 4vw 4vw 4vw 6vw;
     font-size: 2.5vw;
-    /* font-family: 'Cabin Sketch', cursive; */
-    font-family: 'Abel', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
+    /* font-family: 'Abel', sans-serif; */
 }
 
 

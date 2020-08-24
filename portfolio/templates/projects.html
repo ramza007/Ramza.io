@@ -36,12 +36,12 @@
         <section>
         <div class="container-fluid">
             <img src="{{ x.image.url }}">
-            <div class="detail">
-                <h1>{{ x.name }} </h1>
-                <h4> Project developed using Django <br>
-                    This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
-                <p>This <a href="{{ x.repoLink }}"> link</a> to the site's repository</p>
-            </div>
+                <div class="detail">
+                    <h1>{{ x.name }} </h1>
+                    <h4> Project developed using {{ x.tech }} <br>
+                        This <a href="{{ x.projLink }}"> link </a> directs to the web app</h4>
+                    <p>This <a href="{{ x.repoLink }}"> link</a> to the site's repository</p>
+                </div>
         </div>
         </section>
         {% endfor %}

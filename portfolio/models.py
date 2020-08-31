@@ -26,3 +26,11 @@ class Project(models.Model):
         return images
 
         return Image.objects.all()
+
+class ProjectAPI(models.Model):
+    name = models.CharField(max_length=30)
+    projLink = models.URLField(max_length=128, blank=True)
+    repoLink = models.URLField(max_length=128, blank=False)
+
+    def __str__(self):
+        return self.name

@@ -20,7 +20,7 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5vw 5vw 3vh 5vw;
+    padding: 5vw;
     overflow-x: hidden;
     /* margin-bottom: 2%; */
     /* background-color: orange; */
@@ -70,6 +70,35 @@ section {
     scroll-snap-align: center;
 }
 
+section {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+/* :horizontal scroll container */
+
+/* vertical scrolable container */
+
+/* All the snapping stuff */
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    background-color: #f0eeeb;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
 /* Other styles */
 section {
     padding: 1rem;
@@ -77,8 +106,17 @@ section {
     align-items: center;
     justify-content: center;
     /* background-color: darkorchid; */
-    text-align: center;
 }
+
+/* section:nth-child(2n) {
+    background-color: turquoise;
+}
+
+section:nth-child(3n) {
+    background-color: tomato;
+} */
+
+/* End of said container */
 
 
 

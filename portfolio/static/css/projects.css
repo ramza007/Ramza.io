@@ -1,9 +1,7 @@
 body{
-    /* font-family: 'Poor Story', cursive; */
     font-family: 'Courier New', Courier, monospace;
-    /* background-attachment: fixed; */
     overflow-x: hidden;
-    /* margin-bottom: 2%; */
+    font-size: initial;
 }
 
 .container-1{
@@ -61,14 +59,9 @@ body{
 
 /* All the snapping stuff */
 .scroll-container {
-    /* width: 90vw; */
-    height: 90vh;
-    /* max-height: 30rem; */
-    margin: 3rem auto;
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    /* background-color: blue; */
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {

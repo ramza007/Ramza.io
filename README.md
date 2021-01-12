@@ -38,4 +38,4 @@ Started and completed in Python.
 
 #### Licensed under [***Apache***](https://github.com/ramza007/Portfolio2/blob/master/LICENSE)
 
-Copyright (C) 2020 ~ Ombati
+Copyright (C) 2020-2021 ~ Ombati

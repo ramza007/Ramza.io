@@ -12,10 +12,10 @@ body{
     padding: 30% 10% 30% 30%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    text-align: right;
 }
 .container1 h1 {
     opacity: 0.85;
-    text-align: right;
     font-size: 300%;
     font-family: 'Notable', sans-serif;
 }
@@ -24,9 +24,16 @@ body{
     font-family: 'Courier New', Courier, monospace; 
     font-weight: bolder;
     margin-top: 2%;
-    text-align: right;
     font-size: 110%;
     opacity: 0.9;
+}
+
+.container1 a{
+    font-size: 150%;
+    color:black;
+    padding-left: 1%;
+    opacity: 0.7;
+
 }
 
 
@@ -85,6 +92,10 @@ body{
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+}
+
+#links{
+    animation: fadein 11s;
 }
 @keyframes fadein {
     from {

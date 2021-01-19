@@ -4,10 +4,10 @@ from django.db import models
 
 class Project(models.Model):
     image = models.ImageField(upload_to='photos/site_images', null=True)
-    name = models.CharField(max_length=10)
-    tech = models.CharField(max_length=20, null=True)
-    projLink = models.URLField(max_length=128, db_index=True, unique=True, blank=False)
-    repoLink = models.URLField(max_length=128, unique=True, blank=False)
+    name = models.CharField(max_length=30)
+    technology_or_language = models.CharField(max_length=20, null=True)
+    project_link = models.URLField(max_length=128, db_index=True, unique=True, blank=False)
+    repository_link = models.URLField(max_length=128, unique=True, blank=False)
 
 
     def save_image(self):
@@ -29,8 +29,8 @@ class Project(models.Model):
 
 class ProjectAPI(models.Model):
     name = models.CharField(max_length=30)
-    projLink = models.URLField(max_length=128, blank=True)
-    repoLink = models.URLField(max_length=128, blank=False)
+    project_link = models.URLField(max_length=128, blank=True)
+    repository_link = models.URLField(max_length=128, blank=False)
 
     def __str__(self):
         return self.name

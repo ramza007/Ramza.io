@@ -34,17 +34,17 @@
     <main class="scroll-container">
         {% for x in show_case %}
         <section>
-        <div class="container-fluid">
-            <img src="{{ x.image.url }}">
-                <div class="detail">
-                    <h1>{{ x.name }} </h1>
-                    <h4> Project developed using {{ x.technology_or_language }} <br>
-                        This <a href="{{ x.project_link }}"> link </a> directs to the web app</h4>
-                    <p>This <a href="{{ x.repository_link }}"> link</a> to the site's repository</p>
-                </div>
-        </div>
-        </section>
-        {% endfor %}
+            <div class="container-fluid">
+                <img src="{{ x.image.url }}">
+                    <div class="detail">
+                        <h1>{{ x.name }} </h1>
+                        <h4> Project developed using {{ x.technology_or_language }} <br>
+                            This <a href="{{ x.project_link }}"> link </a> directs to the web app</h4>
+                        <p>This <a href="{{ x.repository_link }}"> link</a> to the site's repository</p>
+                    </div>
+            </div>
+    </section>
+    {% endfor %}
     </main>
     
   {% endblock %}

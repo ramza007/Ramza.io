@@ -152,3 +152,15 @@ section:nth-child(3n) {
         text-align: center;
     }
 }
+
+
+/* To be deleted */
+.display1{
+    padding: 43vh; 
+    font-size: 1.4vw;
+}
+
+.display1 a{
+    text-decoration: none;
+
+}

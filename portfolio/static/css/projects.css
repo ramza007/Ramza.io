@@ -6,7 +6,8 @@ body{
 
 .container-1{
     background-attachment: fixed;
-    padding: 40vh;
+    padding: 40vh 40vh 42vh 40vh ; 
+
 }
 
 .container-1 h1{
@@ -150,6 +151,12 @@ section:nth-child(3n) {
         font-size: 8vw;
         float: none;
         text-align: center;
+    }
+
+    /* to be deleted */
+    .display1{
+        padding: 20%; 
+        font-size: 1.4vw;
     }
 }
 

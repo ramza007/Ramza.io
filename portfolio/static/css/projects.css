@@ -20,10 +20,12 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 5vw;
+    padding: 3vw;
+    margin: 5vw;
     overflow-x: hidden;
-    /* margin-bottom: 2%; */
-    /* background-color: orange; */
+    border-radius: 7px;
+    box-shadow: 10px 10px 11px 10px #888888;
+
 }
 
 .detail{
@@ -37,7 +39,7 @@ body{
 
 .container-fluid h1{
     text-align: center;
-    font-size: 150%;
+    font-size: 110%;
     text-decoration: underline;
 }
 
@@ -49,8 +51,7 @@ body{
 
 .container-fluid img{
     width: 60%;
-    padding-left: 4vw;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .container-fluid h4{
@@ -59,9 +60,9 @@ body{
 
 /* All the snapping stuff */
 .scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 section {

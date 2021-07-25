@@ -20,12 +20,10 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 3vw;
-    margin: 5vw;
+    padding: 5vw;
     overflow-x: hidden;
-    border-radius: 7px;
-    box-shadow: 10px 10px 11px 10px #888888;
-
+    /* margin-bottom: 2%; */
+    /* background-color: orange; */
 }
 
 .detail{
@@ -39,7 +37,7 @@ body{
 
 .container-fluid h1{
     text-align: center;
-    font-size: 110%;
+    font-size: 150%;
     text-decoration: underline;
 }
 
@@ -51,7 +49,8 @@ body{
 
 .container-fluid img{
     width: 60%;
-    border-radius: 5px;
+    padding-left: 4vw;
+    border-radius: 10px;
 }
 
 .container-fluid h4{
@@ -60,9 +59,9 @@ body{
 
 /* All the snapping stuff */
 .scroll-container {
-    height: 100vh;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -152,18 +151,13 @@ section:nth-child(3n) {
         float: none;
         text-align: center;
     }
-
-    .display1{
-        padding: 0;
-        font-size: 8vw;
-    }
 }
 
 
 /* To be deleted */
 .display1{
-    padding: 25%; 
-    font-size: 120%;
+    padding: 43vh; 
+    font-size: 1.4vw;
 }
 
 .display1 a{

@@ -21,21 +21,39 @@ body{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4vw;
+    padding: 5vw;
     overflow-x: hidden;
     /* margin-bottom: 2%; */
     /* background-color: orange; */
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.container-fluid:hover .detail {
+  -webkit-opacity: 1;
+  opacity: 1;
 }
 
 .detail{
-    float: right;
-    padding-top: 7%;
+    /* float: right; */
+    /* padding: 0.3%; */
+    border-radius: 10px;
     font-size: 180%;
     font-family: 'Courier New', Courier, monospace; 
-    /* background-color: aqua; */
-
+    color: white;
+    margin: 40% 40% 15% 40%;
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    text-align: center;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    background-color: rgb(145, 137, 137);
+    
 }
-
 
 .container-fluid h1{
     text-align: center;
@@ -50,14 +68,28 @@ body{
 }
 
 .container-fluid img{
-    width: 60%;
+    width: 80%;
     margin-left: 2vw;
     border-radius: 10px;
-
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .container-fluid h4{
     font-size: 70%;
+}
+
+
+.container-fluid:hover img {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -ms-filter: blur(1px);
+  -o-filter: blur(1px);
+  filter: blur(1px);
+  transform: scale(1.03);
+  background: black;
 }
 
 /* All the snapping stuff */

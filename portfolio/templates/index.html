@@ -20,9 +20,13 @@
 <body>
   {% block content %} {{block.super}}
   <div class="container1" id="con1">
-    <h1 id="TIR"> This Is Ramsa</h1>
-      <p>
-        Python Full Stack Developer
+    <h1 id="TIR"> This Is Ramsa
+    </h1>
+      <p> C:\> Python
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='["User", "Developer", "Full Stack Developer","Hacker", "Engineer"]'></span>
+        
+        
       </p>
         <div id="links">
           <a href="https://www.linkedin.com/in/ramza-reseni/"><i class="fa fa-linkedin"></i></a>
@@ -77,6 +81,7 @@
 
 
 {% block scripts %}
+<script src="{% static 'js/scripts.js' %}"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
   // Changing the defaults

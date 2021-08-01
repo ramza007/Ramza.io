@@ -24,7 +24,7 @@ body{
     font-family: 'Courier New', Courier, monospace; 
     font-weight: bolder;
     margin-top: 2%;
-    font-size: 110%;
+    font-size: 130%;
     opacity: 0.9;
 }
 
@@ -92,6 +92,7 @@ body{
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    
 }
 
 #links{

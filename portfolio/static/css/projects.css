@@ -38,10 +38,10 @@ body{
 .detail{
     /* float: right; */
     /* padding: 0.3%; */
-    border-radius: 10px;
     font-size: 180%;
     font-family: 'Courier New', Courier, monospace; 
-    color: white;
+    /* color: white; */
+    color: black;
     margin: 40% 40% 15% 40%;
     opacity: 0;
     position: absolute;
@@ -51,7 +51,15 @@ body{
     -webkit-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+
+    /* Under construction */
+
     background-color: rgb(145, 137, 137);
+    background-color: ;
+    /* background-color: #4389fa; */
+    background-color: white;
+
+    /* ****** End construction ***** */
     
 }
 

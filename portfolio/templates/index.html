@@ -20,9 +20,13 @@
 <body>
   {% block content %} {{block.super}}
   <div class="container1" id="con1">
-    <h1 id="TIR"> This Is Ramza</h1>
-      <p>
-        Python Full Stack Developer
+    <h1 id="TIR"> This Is Ramsa
+    </h1>
+      <p> C:\> Python
+        <span class="txt-rotate" data-period="2000"
+          data-rotate='["User", "Developer", "Full Stack Developer","Hacker", "Engineer"]'></span>
+        
+        
       </p>
         <div id="links">
           <a href="https://www.linkedin.com/in/ramza-reseni/"><i class="fa fa-linkedin"></i></a>
@@ -38,7 +42,7 @@
       <h2> My Journey... </h2><br>
 
       <p>
-        Hi my name is Ramza Ombati, Full Stack Developer in Python. Tools I use for development include Django, HTML, CSS, JavaScript and PostgreSQL. I have experience in Angular development, C/C++, and Java. With fresh ideas determined to change how we interact with our devices in our daily lives, I take on as many challanges thrown at me.
+        Hi my name is Ramsa Ombati, Full Stack Developer in Python. Tools I use for development include Django, HTML, CSS, JavaScript and PostgreSQL. I have experience in Angular development, C/C++, and Java. With fresh ideas determined to change how we interact with our devices in our daily lives, I take on as many challanges thrown at me.
         
       </p>
 
@@ -49,10 +53,11 @@
           <div class="detail-1">
             <ul>
               <h4>Front-end </h4>
-                <li>Django</li>
+                <li>Bootstrap</li>
                 <li>HTML5</li>
                 <li>CSS</li>
                 <li>Javascript</li>
+                <li>jQauery</li>
                 <li>Angular</li>
             </ul>
           </div>
@@ -60,7 +65,8 @@
           <div class="detail-2">
             <ul>
               <h4>Back-end</h4>
-                <li>Python</li>
+                <li>Django</li>
+                <li>Flask</li>
                 <li>PostgreSQL</li>
                 <li>NodeJS</li>
                 <li>RestAPI</li>
@@ -75,6 +81,7 @@
 
 
 {% block scripts %}
+<script src="{% static 'js/scripts.js' %}"></script>
 <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 <script>
   // Changing the defaults

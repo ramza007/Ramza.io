@@ -7,7 +7,7 @@ body{
 }
 
 .container1{
-    background-image: url('../images/version1-2.jpg');
+    background-image: url('../images/RO-001-20.jpg');
     background-size: 100%;
     padding: 30% 10% 30% 30%;
     background-attachment: fixed;
@@ -24,7 +24,7 @@ body{
     font-family: 'Courier New', Courier, monospace; 
     font-weight: bolder;
     margin-top: 2%;
-    font-size: 110%;
+    font-size: 130%;
     opacity: 0.9;
 }
 
@@ -92,6 +92,7 @@ body{
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
+    
 }
 
 #links{

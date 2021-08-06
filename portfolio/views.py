@@ -13,15 +13,15 @@ from .permissions import IsAdminOrReadOnly
 
 # Create your views here.
 def index(request):
-    title = "Ramza | Full Stack Dev. "
+    title = "Ramsa | Full Stack Dev. "
     return render(request, 'index.html', {"title": title })
 
 def about(request):
-    title = " Ramza | About"
+    title = " Ramsa | About"
     return render(request, 'about.html', {"title": title})
 
 def projects(request):
-    title = 'Ramza | Projects'
+    title = 'Ramsa | Projects'
     show_case = Project.objects.all()
     return render(request, 'projects.html', {"title": title, "show_case": show_case})
 
@@ -39,7 +39,7 @@ def projects(request):
 # end of error views
 
 def photos(request):
-    title = 'Photos | Ramza'
+    title = 'Photos | Ramsa'
     return render(request, 'photos2.html', {"title": title})
 
 

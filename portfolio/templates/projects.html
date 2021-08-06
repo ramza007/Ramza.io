@@ -9,8 +9,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"> -->
+
+
+        
         
         {% block styles %}
         {% bootstrap_css %}
@@ -31,7 +37,7 @@
         {% include 'navbar.html' %}
     <!--End of navbar-->
 
-    <!-- <main class="scroll-container">
+    <main class="scroll-container">
         {% for x in show_case %}
         <section>
         <div class="container-fluid">
@@ -45,14 +51,7 @@
         </div>
         </section>
         {% endfor %}
-    </main> -->
-    
-    <div class="display1">
-        <p>
-            Hey there, glad you could make it to my website. Great things are on the way on this page but feel free to explore my
-            repositories on GitHub using this <a href="https://github.com/ramza007?tab=repositories">link</a>
-        </p>
-    </div>
+    </main>
   {% endblock %}
     </body>
 
